@@ -1,0 +1,16 @@
+<div>
+  <h1>Benvenuto !</h1>
+  <p class="insert-number">Veuillez renseigner votre numéro de table</p>
+  <form action="" [formGroup]="formNumberTable">
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="Exemple 42"
+      formControlName="numberTable"
+    />
+    <button (click)="validateNumber()">C'est parti !</button>
+  </form>
+
+  <p class="error">{{ error }}</p>
+</div>
