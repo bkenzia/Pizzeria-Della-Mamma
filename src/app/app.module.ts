@@ -6,11 +6,29 @@ import { AppComponent } from './app.component';
 import { FormNumberTableComponent } from './components/form-number-table/form-number-table.component';
 import { AllProductsComponent } from './pages/all-products/all-products.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import {
+  CentimesToEurosPipe,
+  ProductCardsComponent,
+} from './components/product-cards/product-cards.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.component';
 
 @NgModule({
-  declarations: [AppComponent, FormNumberTableComponent, AllProductsComponent, WelcomeComponent],
+  declarations: [
+    AppComponent,
+    ProductListComponent,
+    AllProductsComponent,
+    ProductCardsComponent,
+    CentimesToEurosPipe,
+    HeaderComponent,
+    FilterByTagComponent,
+    FormNumberTableComponent,
+    WelcomeComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
+  // pipes for currency FR
   bootstrap: [AppComponent],
 })
 export class AppModule {}

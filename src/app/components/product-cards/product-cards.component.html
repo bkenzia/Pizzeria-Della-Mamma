@@ -1,0 +1,75 @@
+
+<!-- 
+<div class="displayFlex">  
+<li *ngFor="let product of productlist">
+     <img src="{{product.picture}}" alt="liste de produits">
+      <br> 
+      {{product.title}}
+       <br> 
+       {{product.price}}  </li>
+    </div> -->
+
+<!-- <div class="displayFlex">  
+    <li *ngFor="let product in newData.pizza">
+     <p>{{product.picture}}</p>
+     </li>
+</div>
+
+   
+<h2>Les Desserts della Mamma</h2>
+<h2>Les Boissons della Mamma</h2>
+
+<button (click)= "trie()">  vfctrcr-yd</button>  -->
+
+<!-- Les éléments ne s'affichent pas dans le HTML car la boucle *ngFor utilisée pour afficher 
+les produits est basée sur la variable productlist qui est définie comme étant un tableau de IProduct.
+ Cependant, dans le code TS, la méthode trie() est appelée dans le ngOnInit() pour transformer le tableau de produits
+  en un objet MyType qui regroupe les produits par catégorie. Dans le HTML, il est tenté d'afficher les différentes catégories 
+  et leurs produits en utilisant l'objet MyType mais cela ne fonctionne pas car *ngFor ne peut pas être utilisé avec un objet. -->
+
+<main class="column"> 
+    <div>
+    <h2>Les Pizzas della Mamma</h2>
+    <ul class="flexWrap">  
+      <li *ngFor="let pizza of newData['pizza']">
+        <img src="{{pizza.picture}}" alt="photo de pizza">
+        <br>
+         <h3> <b> {{pizza.title }} </b> </h3> 
+        <br>
+       <p> {{pizza.price | centimesToEuros }} </p>
+        </li>
+    </ul>
+</div>
+
+
+
+      <h2>Les Desserts della Mamma</h2>
+      <div> 
+    <ul class="flexWrap"> 
+      <li *ngFor="let dessert of newData['dessert']">
+        <img src="{{dessert.picture}}" alt="photo de dessert">
+        <br>
+        <h3><b> {{dessert.title}} </b></h3>
+        <br>
+       <p> {{dessert.price | centimesToEuros}} </p>
+        </li>
+    </ul>
+</div>
+
+
+
+<h2>Les Boissons della Mamma</h2>
+<div> 
+     <ul class="flexWrap">
+      <li *ngFor="let boisson of newData['drink']">
+        <img src="{{boisson.picture}}" alt="photo de boisson">
+        <br>
+     <h3>  <b> {{boisson.title}} </b> </h3>
+        <br>
+       <p>  {{boisson.price | centimesToEuros}} </p>
+        </li>
+    </ul>
+
+  </div>
+          <!-- note :  on accède aux différentes catégories dans l'objet MyType en utilisant leur nom en tant que clé, par exemple newData['pizza'] pour accéder à la catégorie "pizza". -->
+    </main>
