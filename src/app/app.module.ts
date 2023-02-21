@@ -7,15 +7,10 @@ import { FormNumberTableComponent } from './components/form-number-table/form-nu
 import { AllProductsComponent } from './pages/all-products/all-products.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
-import {
-  CentimesToEurosPipe,
-  ProductCardsComponent,
-} from './components/product-cards/product-cards.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.component';
-import { ProductListComponent } from './components/product-list/product-list.component';
-import { AllProductsComponent } from './pages/all-products/all-products.component';
 import { CentimesToEurosPipe, ProductCardsComponent } from './components/product-cards/product-cards.component';
+
 
 
 
@@ -25,10 +20,13 @@ import { CentimesToEurosPipe, ProductCardsComponent } from './components/product
     AppComponent,
     ProductListComponent,
     AllProductsComponent,
-    ProductCardsComponent,
     CentimesToEurosPipe,
+   ProductCardsComponent ,
     HeaderComponent,
     FilterByTagComponent,
+    FormNumberTableComponent,
+    WelcomeComponent
+
     
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
