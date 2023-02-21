@@ -1,0 +1,121 @@
+[33mcommit eb5093e4def7185bab1381018d9e69ad4fccdf9a[m[33m ([m[1;36mHEAD -> [m[1;32mProductList[m[33m)[m
+Merge: 44497d2 20a219f
+Author: thomasheroguelle <totosh93270@gmail.com>
+Date:   Tue Feb 21 14:32:26 2023 +0100
+
+    Merge branch 'DEV' into ProductList
+
+[33mcommit 44497d21514cdbe85ce8dcbdbbc5b3bee9e06001[m
+Author: thomasheroguelle <totosh93270@gmail.com>
+Date:   Tue Feb 21 14:25:10 2023 +0100
+
+    correction entre product-card et product-list
+
+[33mcommit 20a219f8646536d69986626725b861a019695fc5[m[33m ([m[1;31morigin/DEV[m[33m, [m[1;32mfeat/shopCommandes[m[33m, [m[1;32mDEV[m[33m)[m
+Merge: 36c1c42 c4d81f2
+Author: bkenzia <80252507+bkenzia@users.noreply.github.com>
+Date:   Tue Feb 21 12:18:29 2023 +0100
+
+    Merge pull request #4 from bkenzia/feat/numberTable
+    
+    Feat/number table
+
+[33mcommit c4d81f273206e907ea1be72af770070dcfbde881[m
+Author: bkenzia <bkenzia@yahoo.fr>
+Date:   Tue Feb 21 12:12:23 2023 +0100
+
+    résolution des conflits
+
+[33mcommit 45f4cdd1fec0fd0e08af2704f2f3c0bbca49f724[m
+Merge: 87c574e 36c1c42
+Author: bkenzia <bkenzia@yahoo.fr>
+Date:   Tue Feb 21 12:11:44 2023 +0100
+
+    Merge branch 'DEV' of github.com:bkenzia/Pizzeria-Della-Mamma into feat/numberTable
+
+[33mcommit 36c1c42c4509d73d3f50b30d9700f04c14c0e6d9[m
+Merge: 69be409 7c5686e
+Author: THOMAS HEROGUELLE <112635176+thomasheroguelle@users.noreply.github.com>
+Date:   Tue Feb 21 11:51:15 2023 +0100
+
+    Merge pull request #3 from bkenzia/ProductList
+    
+    Création des composants/page product-list/card/all-products
+
+[33mcommit 7c5686e5a5d013b10ce5f2d9b402cf22308c65be[m[33m ([m[1;31morigin/ProductList[m[33m)[m
+Author: thomasheroguelle <totosh93270@gmail.com>
+Date:   Tue Feb 21 11:40:13 2023 +0100
+
+    ajout du style CSS background-color sur product-card, ajout des polices. pixel perfect
+
+[33mcommit 87c574efcab790fa1777f14dba7f0e7905a4c514[m
+Author: bkenzia <bkenzia@yahoo.fr>
+Date:   Tue Feb 21 11:40:05 2023 +0100
+
+    [feat/numberTable] formulaire de numero de table
+
+[33mcommit 662dac9e75fd87730ce18647c5ae078b25ea7182[m
+Author: thomasheroguelle <totosh93270@gmail.com>
+Date:   Tue Feb 21 11:14:55 2023 +0100
+
+    gestion des conflits apres merge
+
+[33mcommit c13a05cc29e7fad2eadfff43fe6e3e340ef96a9e[m
+Merge: 8ad8be9 69be409
+Author: thomasheroguelle <totosh93270@gmail.com>
+Date:   Tue Feb 21 11:13:12 2023 +0100
+
+    Merge branch 'DEV' of https://github.com/bkenzia/Pizzeria-Della-Mamma into ProductList
+
+[33mcommit 8ad8be9f567e4b51657cfde7bbc5746b272f85d7[m
+Author: thomasheroguelle <totosh93270@gmail.com>
+Date:   Tue Feb 21 10:50:35 2023 +0100
+
+    creation product card et product list
+
+[33mcommit 69be409038e4c5cbd34aab85b9dddf431e6c757a[m
+Merge: 1fef128 fb458ec
+Author: JulieNonnon <118167349+JulieNonnon@users.noreply.github.com>
+Date:   Tue Feb 21 10:45:29 2023 +0100
+
+    Merge pull request #2 from bkenzia/feat/filter-by-tag
+    
+    Feat/filter by tag
+
+[33mcommit fb458ec24e77f6a811be25d520f0836145737c21[m
+Author: JulieNonnon <julie.nonnon@gmail.com>
+Date:   Tue Feb 21 10:33:26 2023 +0100
+
+    [FEATURE] création HTML CSS component filtre catégories + style.css
+    
+    création HTML CSS du filtre catégories
+    quelques ajouts de styles comme les fonts Inter et Playfair + le bacgroundcolor du site ont été ajouté respectivement en  index.html et style.css
+
+[33mcommit bc07c24cdaeed0e1cee78fc70f323cd01f474925[m
+Author: JulieNonnon <julie.nonnon@gmail.com>
+Date:   Mon Feb 20 14:51:10 2023 +0100
+
+    [FEATURE] création component header
+    
+    création du component header, y revenir ultérieurement pour l'insertion des méthodes
+
+[33mcommit 1fef12818b4cec9508b29f3c5e6a1f610dc26cab[m
+Merge: ceb1f84 571ed43
+Author: bkenzia <80252507+bkenzia@users.noreply.github.com>
+Date:   Mon Feb 20 11:52:21 2023 +0100
+
+    Merge pull request #1 from bkenzia/feat/mocks
+    
+    [feat] importation des mocks
+
+[33mcommit 571ed43fbc495de11f5a9c524a54e9cfe7e94a0c[m
+Author: bkenzia <bkenzia@yahoo.fr>
+Date:   Mon Feb 20 11:48:18 2023 +0100
+
+    [feat] importation des mocks
+
+[33mcommit ceb1f84c3291a3bfe3f0eaa6e94fa2eaebff3313[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: bkenzia <bkenzia@yahoo.fr>
+Date:   Mon Feb 20 10:52:46 2023 +0100
+
+    commit 2
