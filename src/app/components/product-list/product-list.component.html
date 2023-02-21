@@ -1,3 +1,34 @@
-<app-product-cards>
+ <main class="column"> 
 
-</app-product-cards>
+    <div>
+    <h2>Les Pizzas della Mamma</h2>
+
+    <ul class="flexWrap">  
+        <app-product-cards *ngFor="let product of newData['pizza']" [product] = "product"> </app-product-cards>
+
+        </ul>
+    </div>
+
+    <div>
+        <h2>Les Desserts della Mamma</h2>
+
+    <ul class="flexWrap">  
+        <app-product-cards *ngFor="let product of newData['dessert']" [product] = "product"> </app-product-cards>
+
+        </ul>
+    </div>
+
+    <div>
+        <h2>Les Boissons della Mamma</h2>
+
+
+    <ul class="flexWrap">  
+        <app-product-cards *ngFor="let product of newData['drink']" [product] = "product"> </app-product-cards>
+
+        </ul>
+    </div>
+
+<!-- note :  on accède aux différentes catégories dans l'objet MyType en utilisant leur nom en tant que clé, par exemple newData['pizza'] pour accéder à la catégorie "pizza". -->
+    </main>
+        
+
