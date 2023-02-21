@@ -1,1 +1,12 @@
 @import "../node_modules/normalize.css/normalize.css";
+
+/* Font pour le css
+
+font-family: 'Inter', sans-serif;
+font-family: 'Playfair Display', serif;
+
+*/
+
+body{
+    background-color: #f9f9f9;
+}
