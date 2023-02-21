@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { AllProductsComponent } from './pages/all-products/all-products.component';
-import { ProductCardsComponent } from './components/product-cards/product-cards.component';
+import { CentimesToEurosPipe, ProductCardsComponent } from './components/product-cards/product-cards.component';
 
-import { CentimesToEurosPipe } from './components/product-cards/product-cards.component';
-  // pipes for currency FR
+
 
 
 @NgModule({
@@ -18,6 +19,9 @@ import { CentimesToEurosPipe } from './components/product-cards/product-cards.co
     AllProductsComponent,
     ProductCardsComponent,
     CentimesToEurosPipe,
+    HeaderComponent,
+    FilterByTagComponent,
+    
   ],
   imports: [
     BrowserModule,
