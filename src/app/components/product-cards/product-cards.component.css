@@ -1,42 +1,23 @@
 /* GENERAL  */
-img {
-    width: 207px;
-}
 
 li {
     list-style-type: none;
 }
-h2 {
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
-    font-style:  italic;
-}
-h3, p {
-    margin: 0;
+img {
+    width: 207px;
 }
 h3 {
     font-size: 18px;
     font-family: 'Playfair Display', serif;
 
 }
+h3, p {
+    margin: 0;
+}
 p {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
 
-}
-
-/* display-flex  */
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 57px;
-}
-.flexWrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
 }
 li {
     background-color: white;
