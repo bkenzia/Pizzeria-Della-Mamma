@@ -17,7 +17,9 @@ export class FormNumberTableComponent {
     this.formNumberTable = this.formBuilder.group({
       numberTable: [null],
     });
-    this.stockNumber();
+    // this.stockNumber();
+    this.getNumber();
+    console.log(this.getNumber() === 'null');
   }
 
   getInput() {
@@ -27,17 +29,29 @@ export class FormNumberTableComponent {
   validateNumber() {
     const number = this.getInput();
 
-    console.log(typeof this.getInput());
+    console.log(this.getInput());
     //console.log(number);
     if (number >= 1 && number <= 14) {
       this.router.navigate(['all-products']);
     } else {
       this.error = 'Numéro de table incorrecte.';
     }
-    this.stockNumber();
+    if (number != null) {
+      this.stockNumber(number);
+    }
   }
-  stockNumber() {
-    console.log('local storage', this.getInput());
-    localStorage.setItem('number', this.getInput());
+  stockNumber(number: string) {
+    localStorage.setItem('number', number);
+  }
+  getNumber() {
+    // console.log('valeur number localstorage', localStorage.getItem('number'));
+    const number = localStorage.getItem('number');
+    console.log('test', number);
+    if (number != null) {
+      this.stockNumber(number);
+    } else {
+      this.stockNumber(this.getInput());
+    }
+    return localStorage.getItem('number');
   }
 }

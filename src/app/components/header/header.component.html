@@ -5,7 +5,7 @@
     class="headerLink"
     [ngClass]="{ 'disply-none': this.getNumber() === '' }"
   >
-    <button>Table {{ this.getNumber() }}</button>
+    <button (click)="updateNamberTable()">Table {{ this.getNumber() }}</button>
 
     <button>
       <img src="assets/img/icon-shoppingcard.png" height="15px" weigh="15px" />
