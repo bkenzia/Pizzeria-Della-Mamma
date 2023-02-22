@@ -1,0 +1,19 @@
+h2{
+    font-family: Inter;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: italic;
+    color: #092947;
+}
+
+.newOrder{
+    font-family: Inter;
+    font-size: 14px;
+    text-align: center;
+    color: #092947;
+}
