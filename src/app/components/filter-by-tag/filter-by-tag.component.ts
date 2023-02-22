@@ -14,7 +14,7 @@ export class FilterByTagComponent implements OnInit {
 
  ngOnInit() : void {
   this.productsService.getProduct();
-  this.productsService.getProductsByTag(findTag);
+  // this.productsService.getProductsByTag(findTag);
 
  }
 
