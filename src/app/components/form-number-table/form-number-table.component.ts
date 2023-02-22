@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -10,12 +10,14 @@ import { Router } from '@angular/router';
 export class FormNumberTableComponent {
   formNumberTable!: FormGroup;
   error: string = '';
+  // @Output() newItemEvent = new EventEmitter<string>();
 
   constructor(private formBuilder: FormBuilder, private router: Router) {}
   ngOnInit() {
     this.formNumberTable = this.formBuilder.group({
       numberTable: [null],
     });
+    this.stockNumber();
   }
 
   getInput() {
@@ -24,12 +26,18 @@ export class FormNumberTableComponent {
 
   validateNumber() {
     const number = this.getInput();
+
+    console.log(typeof this.getInput());
     //console.log(number);
     if (number >= 1 && number <= 14) {
-      console.log(number);
       this.router.navigate(['all-products']);
     } else {
       this.error = 'Numéro de table incorrecte.';
     }
+    this.stockNumber();
+  }
+  stockNumber() {
+    console.log('local storage', this.getInput());
+    localStorage.setItem('number', this.getInput());
   }
 }

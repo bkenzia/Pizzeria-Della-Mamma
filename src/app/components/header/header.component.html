@@ -1,13 +1,15 @@
 <header>
+  <p class="headerTitle">Pizzeria Della Mamma</p>
 
-    <p class="headerTitle">Pizzeria Della Mamma</p>
+  <nav
+    class="headerLink"
+    [ngClass]="{ 'disply-none': this.getNumber() === '' }"
+  >
+    <button>Table {{ this.getNumber() }}</button>
 
-    <nav class="headerLink">
-
-        <button>Table #</button>
-
-        <button> <img src="assets/img/icon-shoppingcard.png" height="15px" weigh="15px"> 0 </button>
-
-    </nav>
-
+    <button>
+      <img src="assets/img/icon-shoppingcard.png" height="15px" weigh="15px" />
+      0
+    </button>
+  </nav>
 </header>
