@@ -1,6 +1,25 @@
 <div>
-  <h1>Benvenuto !</h1>
-  <p class="insert-number">Veuillez renseigner votre numéro de table</p>
+  <h1 [ngClass]="{ 'disply-none': this.getNumber() != 'null' }">Benvenuto !</h1>
+  <h1 [ngClass]="{ 'disply-none': this.getNumber() == 'null' }">
+    Table {{ this.getNumber() }}
+  </h1>
+
+  <p
+    class="insert-number"
+    [ngClass]="{
+      'disply-none': this.getNumber() != 'null'
+    }"
+  >
+    Veuillez renseigner votre numéro de table
+  </p>
+  <p
+    class="insert-number"
+    [ngClass]="{
+      'disply-none': this.getNumber() == 'null'
+    }"
+  >
+    Modifier mon numéros de table
+  </p>
   <form action="" [formGroup]="formNumberTable">
     <input
       type="text"
@@ -9,7 +28,18 @@
       placeholder="Exemple 42"
       formControlName="numberTable"
     />
-    <button (click)="validateNumber()">C'est parti !</button>
+    <button
+      (click)="validateNumber()"
+      [ngClass]="{ 'disply-none': this.getNumber() != 'null' }"
+    >
+      C'est parti !
+    </button>
+    <button
+      (click)="validateNumber()"
+      [ngClass]="{ 'disply-none': this.getNumber() == 'null' }"
+    >
+      Modifier
+    </button>
   </form>
 
   <p class="error">{{ error }}</p>

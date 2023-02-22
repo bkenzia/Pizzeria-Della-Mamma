@@ -1,39 +1,41 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header{
-    background-color: #092947;
+header {
+  background-color: #092947;
 }
 
-button{
-    background-color: white;
-    padding: 10px 15px;
-    margin: 10px;
-    border-radius: 20px;
-    border: none;
+button {
+  background-color: white;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
 }
 
-button:hover{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
 
-.headerTitle{
-    color: white;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    padding: 21px 0;
-    position: relative;
-
+.headerTitle {
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 21px 0;
+  position: relative;
 }
 
-.headerLink{
-    margin-left: 50px;
-    position:absolute;
-    right: 90px;
-    top: 5px;
-    /* display: none; */
+.headerLink {
+  margin-left: 50px;
+  position: absolute;
+  right: 90px;
+  top: 5px;
+  /* display: none; */
+}
+.disply-none {
+  display: none;
 }
