@@ -58,3 +58,6 @@ button {
   line-height: 24px;
   color: #e12417;
 }
+.disply-none {
+  display: none !important;
+}
