@@ -8,8 +8,8 @@
     <button (click)="updateNamberTable()">Table {{ this.getNumber() }}</button>
 
     <button>
-      <img src="assets/img/icon-shoppingcard.png" height="15px" weigh="15px" />
-      0
+      <a routerLink="/basket"><img src="assets/img/icon-shoppingcard.png" height="15px" weigh="15px" /></a>
+      {{ this.basketService.productQuantity }}
     </button>
   </nav>
 </header>
