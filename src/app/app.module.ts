@@ -12,7 +12,7 @@ import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.c
 import { CentimesToEurosPipe, ProductCardsComponent } from './components/product-cards/product-cards.component';
 import { BasketComponent } from './pages/basket/basket.component';
 import { OrderSuccessComponent } from './pages/order-success/order-success.component';
-import { BasketComponent } from './components/basket/basket.component';
+
 
 
 

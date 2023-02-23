@@ -1,36 +1,37 @@
 <p>basket works!</p>
 
-<main>
+<!-- <main>
 
     <div id="panier" >
 
        
 
-        <ul class="flex column">
+        <ul>
             <li *ngFor="let basketProduct of basket; let index = index">
                 <article class="article flex">
                     <img src="{{basketProduct.product.image }}" alt="{{ basketProduct.product.title}}" width="150px">
                    
-                    <!-- Partie nom de l'article - prix et description -->
-                    <div class="description flex column">
-                        <p class="titre">{{ basketProduct.product.title}}</p>
+                    Partie nom de l'article - prix et description
+                    <div>
+                        <p>{{ basketProduct.product.title}}</p>
                         <br>
-                        <small class="titre">{{ basketProduct.product.description }}</small>
-                        <p class="prix-article">{{ basketProduct.product.price}}€</p>
-                    </div>
+                        <p>{{ basketProduct.product.description }}</p>
+                        <p{{ basketProduct.product.price}}€</p>
+                    </div> -->
 
 
-                    <!-- partie prix et bouton supprimer -->
-                    <div class="prix flex column">
+                    <!-- partie prix -->
+                    <!-- <div>
+
                         <app-counter></app-counter>
-                       
-        
-                    
+            
                     </div>
-                    <button class="suppression" (click)="removeProduct(index)">Supprimer</button>
 
                 </article>
                 <br>
             </li>
         </ul>
-    </div>
+
+
+
+    </div> -->
