@@ -19,7 +19,6 @@ export class FormNumberTableComponent {
     });
     // this.stockNumber();
     this.getNumber();
-    console.log(this.getNumber() === 'null');
   }
 
   getInput() {
@@ -29,8 +28,6 @@ export class FormNumberTableComponent {
   validateNumber() {
     const number = this.getInput();
 
-    console.log(this.getInput());
-    //console.log(number);
     if (number >= 1 && number <= 14) {
       this.router.navigate(['all-products']);
     } else {

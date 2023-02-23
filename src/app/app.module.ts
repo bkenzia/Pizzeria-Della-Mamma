@@ -10,6 +10,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { HeaderComponent } from './components/header/header.component';
 import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.component';
 import { CentimesToEurosPipe, ProductCardsComponent } from './components/product-cards/product-cards.component';
+import { CustomProductComponent } from './components/custom-product/custom-product.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 
@@ -25,7 +27,9 @@ import { CentimesToEurosPipe, ProductCardsComponent } from './components/product
     HeaderComponent,
     FilterByTagComponent,
     FormNumberTableComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    CustomProductComponent,
+    NotFoundComponent
 
     
   ],

@@ -1,0 +1,21 @@
+<div>
+  <img src="{{ product.picture }}" alt="" />
+  <div>
+    <h3>{{ product.title }}</h3>
+    <p>{{ product.price }}</p>
+    <p>{{ product.description }}</p>
+    <legend>Ingrédients inclus:</legend>
+    <div>
+      <label for="olives">{{
+        product.includedIngredients[1].ingredient.title
+      }}</label>
+      <input type="checkbox" id="olives" name="olives" checked />
+    </div>
+    <div>
+      <label for="Mozarella">{{
+        product.includedIngredients[0].ingredient.title
+      }}</label>
+      <input type="checkbox" id="Mozarella" name="Mozarella" />
+    </div>
+  </div>
+</div>
