@@ -9,13 +9,17 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.component';
-import { CentimesToEurosPipe, ProductCardsComponent } from './components/product-cards/product-cards.component';
+
+import {
+  CentimesToEurosPipe,
+  ProductCardsComponent,
+} from './components/product-cards/product-cards.component';
 import { CustomProductComponent } from './components/custom-product/custom-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProductsCategoryComponent } from './components/products-category/products-category.component';
 
-
-
-
+// import { ProductCardsComponent } from './components/product-cards/product-cards.component';
+// import { CentimesToEurosPipe } from './components/product-cards/product-cards.component';
 
 @NgModule({
   declarations: [
@@ -23,15 +27,14 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     ProductListComponent,
     AllProductsComponent,
     CentimesToEurosPipe,
-   ProductCardsComponent ,
+    ProductCardsComponent,
     HeaderComponent,
     FilterByTagComponent,
     FormNumberTableComponent,
     WelcomeComponent,
     CustomProductComponent,
-    NotFoundComponent
-
-    
+    NotFoundComponent,
+    ProductsCategoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

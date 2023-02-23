@@ -1,6 +1,7 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IProduct, PRODUCTS } from 'src/app/mocks/products';
+// import { IProduct, PRODUCTS } from 'src/app/mocks/products';
 // @Pipe = décorateur -> utile pour définir un Pipe. Prend un objet en parametre qui contient un nom pour le pipe 'name'
 @Pipe({ name: 'centimesToEuros' })
 export class CentimesToEurosPipe implements PipeTransform {

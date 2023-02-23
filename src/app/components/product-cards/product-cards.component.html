@@ -1,3 +1,4 @@
+<!-- 
 <li>
   <a routerLink="/all-products/{{ product.id }}">
     <img src="{{ product.picture }}" alt="photo de dessert" />
@@ -8,4 +9,13 @@
     <br />
     <p>{{ product.price | centimesToEuros }}</p>
   </a>
+</li> -->
+
+<!-- <h2>{{ productCards.titre }}</h2> -->
+
+<li>
+  <img src="{{ productCards.picture }}" alt="" />
+  <h3>{{ productCards.title }}</h3>
+  <br />
+  <p>{{ productCards.price | centimesToEuros }}</p>
 </li>

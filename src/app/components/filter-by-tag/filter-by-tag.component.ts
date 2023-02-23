@@ -1,6 +1,6 @@
-import { Component , OnInit} from '@angular/core';
-import { PRODUCTS } from 'src/app/mocks/products';
-import { ProductListService } from 'src/app/services/product-list.service';
+import { Component } from '@angular/core';
+import { ProductCategoryType, TagType, IProductsByCategory } from 'src/app/mocks/mock2.0';
+
 
 
 @Component({
@@ -8,14 +8,10 @@ import { ProductListService } from 'src/app/services/product-list.service';
   templateUrl: './filter-by-tag.component.html',
   styleUrls: ['./filter-by-tag.component.css']
 })
-export class FilterByTagComponent implements OnInit {
-
-  constructor(private productsService: ProductListService) { }
-
- ngOnInit() : void {
-  this.productsService.getProduct();
-  // this.productsService.getProductsByTag(findTag);
-
- }
-
+export class FilterByTagComponent {
+   greet(products: IProductsByCategory) {
+    return "hello" + products.category;
+  }
+  
 }
+

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct, IProductsByCategory, PRODUCTS } from 'src/app/mocks/mock2.0';
 
 @Component({
   selector: 'app-all-products',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./all-products.component.css']
 })
 export class AllProductsComponent {
+  productsCategory: IProductsByCategory[] = PRODUCTS;
 
 }
