@@ -37,6 +37,12 @@ export class ProductListComponent {
       // On affiche le nouvel objet qui regroupe les produits par catégorie dans la console
     return newData;
 }
+
+
+
+
 }
+
+
   // r = valeur courante
   // currentPrice = chzque tour de boucl

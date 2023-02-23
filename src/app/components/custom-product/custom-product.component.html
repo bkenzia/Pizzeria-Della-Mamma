@@ -1,21 +1,38 @@
-<div>
-  <img src="{{ product.picture }}" alt="" />
-  <div>
-    <h3>{{ product.title }}</h3>
-    <p>{{ product.price }}</p>
-    <p>{{ product.description }}</p>
-    <legend>Ingrédients inclus:</legend>
-    <div>
-      <label for="olives">{{
-        product.includedIngredients[1].ingredient.title
-      }}</label>
-      <input type="checkbox" id="olives" name="olives" checked />
-    </div>
-    <div>
-      <label for="Mozarella">{{
-        product.includedIngredients[0].ingredient.title
-      }}</label>
-      <input type="checkbox" id="Mozarella" name="Mozarella" />
+<main>
+  <a routerLink="/all-products">Retour aux produits</a>
+  <div class="container">
+    <img src="{{ product.picture }}" alt="" />
+    <div class="ingredients">
+      <div class="margin-b">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price | centimesToEuros }}</p>
+        <p>{{ product.description }}</p>
+      </div>
+      <div class="margin-b">
+        <legend>Ingrédients inclus:</legend>
+        <div *ngFor="let ingredients of product.includedIngredients">
+          <div class="flex">
+            <p>{{ ingredients.ingredient.title }}</p>
+            <button class="extras-button adition ingredient-button"></button>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="margin-b">
+        <legend>Extras:</legend>
+        <div *ngFor="let extras of product.extras" class="extras">
+          <div>
+            <h4>{{ extras.ingredient.title }}</h4>
+            <p>{{ extras.additionalPrice | centimesToEuros }}</p>
+          </div>
+          <div class="extras-increment">
+            <button class="soustraction extras-button">-</button>
+            <p>0</p>
+            <button class="adition extras-button">+</button>
+          </div>
+        </div>
+      </div>
+      <button class="panier-bnt">Ajouter au panier</button>
     </div>
   </div>
-</div>
+</main>
