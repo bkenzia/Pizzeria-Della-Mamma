@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Product, PRODUCTS } from 'src/app/mocks/products.mock';
-import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
+
 
 
 @Component({
@@ -9,23 +8,23 @@ import { BasketProduct, BasketService } from 'src/app/services/basket/basket.ser
   styleUrls: ['./basket.component.css']
 })
 export class BasketComponent {
-  basket: BasketProduct[] = []; 
+//   basket: BasketProduct[] = []; 
 
 
-  constructor(public basketService: BasketService) {};
+//   constructor(public basketService: BasketService) {};
 
-  ngOnInit() {
-    this.getbasket();
-  }
+//   ngOnInit() {
+//     this.getbasket();
+//   }
 
-  getbasket() {
-    this.basket = this.basketService.getBasket();
-  }
- removeProduct(index: number) {
-  this.basketService.removeProduct(index);
+//   getbasket() {
+//     this.basket = this.basketService.getBasket();
+//   }
+//  removeProduct(index: number) {
+//   this.basketService.removeProduct(index);
   
-  this.getbasket();
+//   this.getbasket();
   
- }
+//  }
 
 }

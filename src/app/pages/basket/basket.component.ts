@@ -1,16 +1,5 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-basket',
-//   templateUrl: './basket.component.html',
-//   styleUrls: ['./basket.component.css']
-// })
-// export class BasketComponent {
-
-// }
-
 import { Component } from '@angular/core';
-import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
+// import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
 
 @Component({
   selector: 'app-basket',
@@ -18,21 +7,21 @@ import { BasketProduct, BasketService } from 'src/app/services/basket/basket.ser
   styleUrls: ['./basket.component.css']
 })
 export class BasketComponent {
-  basket: BasketProduct[] = []; 
+//   basket: BasketProduct[] = []; 
 
-  constructor(public basketService: BasketService) {};
+//   constructor(public basketService: BasketService) {};
 
-  ngOnInit() {
-    this.getbasket();
-  }
+//   ngOnInit() {
+//     this.getbasket();
+//   }
 
-  getbasket() {
-    this.basket = this.basketService.getBasket();
-  }
- removeProduct(index: number) {
-  this.basketService.removeProduct(index);
+//   getbasket() {
+//     this.basket = this.basketService.getBasket();
+//   }
+//  removeProduct(index: number) {
+//   this.basketService.removeProduct(index);
   
-  this.getbasket();
+//   this.getbasket();
   
- }
+//  }
 }
