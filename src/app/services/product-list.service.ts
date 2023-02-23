@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PRODUCTS, IProduct } from '../mocks/products';
+import { PRODUCTS, IProduct, TagType } from '../mocks/products';
 
 
 
@@ -8,30 +8,25 @@ import { PRODUCTS, IProduct } from '../mocks/products';
 })
 export class ProductListService {
 
-  
+  tags: TagType[] = ["tomato", "white", "drink", "veggie", "dessert"];
   constructor() { }
 
-  
-// Cette méthode renvoie tous les produits disponibles dans la constante PRODUCTS.
-public getProduct() {
-  console.log("getProduct");
-  
-  return PRODUCTS;
-}
+  //  méthode getProducts qui prend un paramètre tag de type TagType
+  getProducts(tag: TagType) {
 
+    // verifie si le tableau de tags contient  un élément
+    if (this.tags.length === 1) {
 
-// Cette méthode prend en entrée un tag et une liste de tags, et renvoie le premier tag correspondant à celui passé en paramètre.
-// Elle renvoie undefined si aucun tag ne correspond.
-public findTag(tag: string | null, tags: string[]): string | undefined {
-  return tags.find((ele) => ele === tag);
-}
-
-// Cette méthode prend en entrée un tag et renvoie tous les produits ayant ce tag.
-public getProductsByTag(tag: string | null): IProduct[] {
-  return PRODUCTS.filter(
-    (product) => this.findTag(tag, product.tags) === tag
-  );
-}
+      return PRODUCTS;
+      // Si c'est le cas, retournez tous les produits
+    }
+    else {
+      // Sinon, filtrez les produits en fonction du tag fourni
+      return PRODUCTS.filter((product) => {
+        return product.tags.includes(tag);
+      })
+    }
+  }
 }
 
 

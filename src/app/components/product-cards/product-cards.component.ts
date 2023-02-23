@@ -1,6 +1,7 @@
-import { Component , Input} from '@angular/core';
-import { IProduct } from 'src/app/mocks/products';
+import { Component } from '@angular/core';
 import { Pipe, PipeTransform } from '@angular/core';
+import { Input } from '@angular/core';
+import { IProductsByCategory } from 'src/app/mocks/mock2.0';
 
 
 // @Pipe = décorateur -> utile pour définir un Pipe. Prend un objet en parametre qui contient un nom pour le pipe 'name'
@@ -28,8 +29,9 @@ export class CentimesToEurosPipe implements PipeTransform {
   styleUrls: ['./product-cards.component.css']
 })
 export class ProductCardsComponent {
-  @Input() product!: IProduct;
-  
-    
-
+  @Input() productCards! : IProductsByCategory;
+  ngOnInit(){
+    console.log('products card',this.productCards)
+    this.productCards;
+  }
 }

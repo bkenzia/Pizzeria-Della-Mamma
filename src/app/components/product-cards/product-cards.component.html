@@ -1,8 +1,12 @@
-  <li>
-      <img src="{{product.picture}}" alt="photo de dessert">
+<div>
+
+  <h2>{{productCards.titre}}</h2>
+  <ul>
+    <li *ngFor="let product of productCards.products">
+      <img src="{{product.picture}}" alt="">
+      <h3>{{product.title}}</h3>
       <br>
-      <h3><b> {{product.title}} </b></h3>
-      <br>
-     <p> {{product.price | centimesToEuros}} </p>
-      </li>
+      <p>{{product.price | centimesToEuros}}</p>
+  </ul>
+</div>
 
