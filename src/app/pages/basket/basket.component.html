@@ -1,7 +1,21 @@
-<p>basket works!</p>
+<h3>Panier</h3>
 
-<app-basket></app-basket>
+<!-- <app-basket></app-basket> -->
 
+<div class="emptyBasket">
+    <p>Vous n'avez aucun article pour le moment.</p>
+    <p><a routerLink="/all-products">Retourner à la page produit</a></p>
+</div>
+
+<div class="flexBasket">
+    <div class="basketPageLink">
+
+        <button class="confirmOrder"><a routerLink="/order-success"> Table # : Envoyer la commande en cuisine </a></button>
+
+        <p class="changeTable"><a routerLink="/">Votre table n'est pas la #  ?</a></p>
+
+    </div>
+</div>
 <!-- <button><a routerLink="/order-success"> Table {{ this.getNumber() }} : Envoyer la commande en cuisine </a></button>
 
 <p><a routerLink="/">Votre table n'est pas la {{ this.getNumber() }}  ?</a></p> -->
