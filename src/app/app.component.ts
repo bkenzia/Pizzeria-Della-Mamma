@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BasketService } from './services/basket.service';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'APP-Pizzeria';
   numbertable!: string;
+
+  constructor (public basketService : BasketService) {}
+
+ngOnInit() {
+ this.basketService.getBasket();
+}
+
 }

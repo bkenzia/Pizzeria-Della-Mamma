@@ -13,6 +13,7 @@ import { CentimesToEurosPipe, ProductCardsComponent } from './components/product
 import { BasketComponent } from './pages/basket/basket.component';
 import { OrderSuccessComponent } from './pages/order-success/order-success.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { ButtonAddbasketComponent } from './components/button-addbasket/button-addbasket.component';
 
 
 
@@ -32,7 +33,8 @@ import { CounterComponent } from './components/counter/counter.component';
     WelcomeComponent,
     OrderSuccessComponent,
     BasketComponent,
-    CounterComponent
+    CounterComponent,
+    ButtonAddbasketComponent
 
     
   ],
