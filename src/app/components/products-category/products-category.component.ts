@@ -8,4 +8,10 @@ import { IProductsByCategory } from 'src/app/mocks/mock2.0';
 })
 export class ProductsCategoryComponent {
   @Input() products!: IProductsByCategory[];
+  productsTag(newKey: IProductsByCategory[]) {
+    return (this.products = newKey);
+  }
+  ngOnInit() {
+    this.products;
+  }
 }

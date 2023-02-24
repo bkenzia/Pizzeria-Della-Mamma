@@ -30,7 +30,7 @@ export class CentimesToEurosPipe implements PipeTransform {
 export class ProductCardsComponent {
   @Input() productCards!: IProduct;
   ngOnInit() {
-    console.log('products card', this.productCards);
+    // console.log('products card', this.productCards);
     this.productCards;
   }
 }
