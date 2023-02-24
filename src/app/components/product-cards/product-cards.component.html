@@ -13,9 +13,12 @@
 
 <!-- <h2>{{ productCards.titre }}</h2> -->
 
-<li>
-  <img src="{{ productCards.picture }}" alt="" />
-  <h3>{{ productCards.title }}</h3>
-  <br />
-  <p>{{ productCards.price | centimesToEuros }}</p>
-</li>
+<a routerLink="/all-products/{{ productCards.id }}">
+  <li>
+    <img src="{{ productCards.picture }}" alt="" />
+    <h3>{{ productCards.title }}</h3>
+    <br />
+    <p>{{ productCards.price | centimesToEuros }}</p>
+    <p>{{ productCards.id }}</p>
+  </li>
+</a>
