@@ -1,0 +1,6 @@
+<app-filter-by-tag (productsEvent)="productsTag($event)"> </app-filter-by-tag>
+<ul>
+  <app-product-list *ngFor="let product of products" [productList]="product">
+  </app-product-list>
+</ul>
+<h2>Buon Appetito !</h2>

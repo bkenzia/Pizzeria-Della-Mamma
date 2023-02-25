@@ -1,0 +1,67 @@
+main {
+  width: 700px;
+  margin: 60px auto;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  margin-top: 47px;
+  gap: 21px;
+}
+img {
+  width: 371px;
+  height: 371px;
+}
+.ingredients {
+  width: 371px;
+}
+.ingredient-button {
+  width: 23px !important;
+  height: 23px !important;
+}
+.extras {
+  display: flex;
+  justify-content: space-between;
+}
+.extras-increment {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.extras-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  border: transparent;
+  font-size: 26px;
+  font-weight: 600;
+}
+.adition {
+  background: #092947;
+}
+.soustraction {
+  background: rgba(9, 41, 91, 0.6);
+}
+.panier-bnt {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  background: #092947;
+  width: 371px;
+  height: 67px;
+  border-radius: 10px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.margin-b {
+  margin-bottom: 52px;
+}

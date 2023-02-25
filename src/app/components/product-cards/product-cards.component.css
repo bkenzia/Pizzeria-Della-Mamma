@@ -1,26 +1,27 @@
-/* GENERAL  */
-
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 img {
-    width: 207px;
+  width: 207px;
 }
 h3 {
-    font-size: 18px;
-    font-family: 'Playfair Display', serif;
-
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
 }
-h3, p {
-    margin: 0;
+h3,
+p {
+  margin: 0;
 }
 p {
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
 }
 li {
-    background-color: white;
-    padding: 10px;
-    
+  background-color: white;
+  padding: 10px;
+  width: 207px;
+}
+a {
+  text-decoration: none;
+  color: #092947;
 }

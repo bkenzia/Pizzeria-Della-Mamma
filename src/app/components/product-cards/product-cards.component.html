@@ -1,9 +1,9 @@
-<li>
-  <img src="{{ product.picture }}" alt="photo de dessert" />
-  <br />
-  <h3>
-    <b> {{ product.title }} </b>
-  </h3>
-  <br />
-  <p>{{ product.price | centimesToEuros }}</p>
-</li>
+<a routerLink="/all-products/{{ productCards.id }}">
+  <li>
+    <img src="{{ productCards.picture }}" alt="" />
+    <h3>{{ productCards.title }}</h3>
+    <br />
+    <p>{{ productCards.price | centimesToEuros }}</p>
+    <p>{{ productCards.id }}</p>
+  </li>
+</a>

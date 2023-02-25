@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   constructor(private router: Router) {}
   ngOnInit() {
-    console.log('number table composant header', this.getNumber());
+    // console.log('number table composant header', this.getNumber());
   }
   getNumber(): number | string {
     const number = localStorage.getItem('number');

@@ -1,24 +1,21 @@
-
-
 h2 {
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
-    font-style:  italic;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  padding-left: 3.5rem;
+  margin-top: 73px;
 }
-
-
-
 
 /* display-flex  */
 .column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 57px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0 57px;
 }
 .flexWrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
 }

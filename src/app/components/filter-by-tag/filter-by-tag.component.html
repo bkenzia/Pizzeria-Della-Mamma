@@ -1,7 +1,49 @@
 <ul class="filterTag">
-  <li><a routerLink="">Base tomate</a></li>
-  <li><a routerLink="">Base blanche</a></li>
-  <li><a routerLink="">Veggie</a></li>
-  <li><a routerLink="">Desserts</a></li>
-  <li><a routerLink="">Boissons</a></li>
+  <li>
+    <a
+      class="test"
+      routerLink="/all-products"
+      #newKey
+      (click)="updateProductCategorie('tomato')"
+    >
+      Base tomate
+    </a>
+  </li>
+  <li>
+    <a
+      class="test"
+      routerLink="/all-products"
+      #newKey
+      (click)="updateProductCategorie('white')"
+    >
+      Base blanche
+    </a>
+  </li>
+  <li>
+    <a
+      class="test"
+      routerLink="/all-products"
+      #newKey
+      (click)="updateProductCategorie('veggie')"
+      >Veggie</a
+    >
+  </li>
+  <li>
+    <a
+      class="test"
+      routerLink="/all-products"
+      #newKey
+      (click)="updateProductCategorie('dessert')"
+      >Desserts</a
+    >
+  </li>
+  <li>
+    <a
+      class="test"
+      routerLink="/all-products"
+      #newKey
+      (click)="updateProductCategorie('drink')"
+      >Boissons</a
+    >
+  </li>
 </ul>

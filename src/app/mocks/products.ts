@@ -1,4 +1,4 @@
-import { IIngredient } from "./ingredients";
+import { IIngredient } from './ingredients';
 
 export interface IIncludedIngredient {
   ingredient: IIngredient;
@@ -12,9 +12,9 @@ export interface IExtraIngredient {
   additionalPrice: number;
 }
 
-export type ProductCategoryType = "pizza" | "drink" | "dessert";
+export type ProductCategoryType = 'pizza' | 'drink' | 'dessert';
 
-export type TagType = "tomato" | "white" | "drink" | "veggie" | "dessert";
+export type TagType = 'tomato' | 'white' | 'drink' | 'veggie' | 'dessert';
 
 export interface IProduct {
   id: number;
@@ -31,31 +31,31 @@ export interface IProduct {
 export const PRODUCTS: IProduct[] = [
   {
     id: 1,
-    category: "pizza",
-    title: "Pizza Chicken",
+    category: 'pizza',
+    title: 'Pizza Chicken',
     description:
-      "Base crème fraîche, mozzarella, poulet fumé et pommes de terre.",
+      'Base crème fraîche, mozzarella, poulet fumé et pommes de terre.',
     price: 900,
-    picture: "../../assets/img/pizza-chicken.png",
+    picture: '../../assets/img/pizza-chicken.png',
     includedIngredients: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         isSelected: true,
       },
@@ -64,539 +64,539 @@ export const PRODUCTS: IProduct[] = [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["white"]
+    tags: ['white'],
   },
   {
     id: 2,
-    category: "pizza",
-    title: "Pizza Orientale",
+    category: 'pizza',
+    title: 'Pizza Orientale',
     description:
-      "Base sauce tomate, mozzarella, escalope, viande hachée, merguez et poivrons.",
+      'Base sauce tomate, mozzarella, escalope, viande hachée, merguez et poivrons.',
     price: 900,
-    picture: "../../assets/img/pizza-orientale.png",
+    picture: '../../assets/img/pizza-orientale.png',
     includedIngredients: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope"
+          title: 'Escalope',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée"
+          title: 'Viande hachée',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez"
+          title: 'Merguez',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons"
+          title: 'Poivrons',
         },
         isSelected: true,
-      }
+      },
     ],
     extras: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["tomato"]
+    tags: ['tomato'],
   },
   {
     id: 3,
-    category: "pizza",
-    title: "Pizza Bolognaise",
+    category: 'pizza',
+    title: 'Pizza Bolognaise',
     description:
-      "Base sauce tomate, mozzarella, viande hachée, champignons et poulet fumé.",
+      'Base sauce tomate, mozzarella, viande hachée, champignons et poulet fumé.',
     price: 950,
-    picture: "../../assets/img/pizza-bolognaise.png",
+    picture: '../../assets/img/pizza-bolognaise.png',
     includedIngredients: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée"
+          title: 'Viande hachée',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons"
+          title: 'Champignons',
         },
         isSelected: true,
       },
@@ -605,265 +605,265 @@ export const PRODUCTS: IProduct[] = [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["tomato"]
+    tags: ['tomato'],
   },
   {
     id: 4,
-    category: "pizza",
-    title: "Pizza Rio",
+    category: 'pizza',
+    title: 'Pizza Rio',
     description:
-      "Base sauce tomate, mozzarella, viande hachée, champignons et poulet fumé.",
+      'Base sauce tomate, mozzarella, viande hachée, champignons et poulet fumé.',
     price: 950,
-    picture: "../../assets/img/pizza-rio.png",
+    picture: '../../assets/img/pizza-rio.png',
     includedIngredients: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez"
+          title: 'Merguez',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons"
+          title: 'Poivrons',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons"
+          title: 'Oignons',
         },
         isSelected: true,
       },
@@ -872,265 +872,264 @@ export const PRODUCTS: IProduct[] = [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["tomato"]
+    tags: ['tomato'],
   },
   {
     id: 5,
-    category: "pizza",
-    title: "Pizza Quatre Fromages",
-    description:
-      "Base blanche, mozzarella, chèvre, Gorgonzola et Boursin.",
+    category: 'pizza',
+    title: 'Pizza Quatre Fromages',
+    description: 'Base blanche, mozzarella, chèvre, Gorgonzola et Boursin.',
     price: 950,
-    picture: "../../assets/img/pizza-quatre-fromages.png",
+    picture: '../../assets/img/pizza-quatre-fromages.png',
     includedIngredients: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola"
+          title: 'Gorgonzola',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre"
+          title: 'Chèvre',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin"
+          title: 'Boursin',
         },
         isSelected: true,
       },
@@ -1139,265 +1138,264 @@ export const PRODUCTS: IProduct[] = [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 2,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["white"]
+    tags: ['white'],
   },
   {
     id: 6,
-    category: "pizza",
-    title: "Pizza Napolitaine",
-    description:
-      "Base sauce tomate, mozzarella, anchois, olives et câpres.",
+    category: 'pizza',
+    title: 'Pizza Napolitaine',
+    description: 'Base sauce tomate, mozzarella, anchois, olives et câpres.',
     price: 850,
-    picture: "../../assets/img/pizza-napolitaine.png",
+    picture: '../../assets/img/pizza-napolitaine.png',
     includedIngredients: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois"
+          title: 'Anchois',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres"
+          title: 'Câpres',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives"
+          title: 'Olives',
         },
         isSelected: true,
       },
@@ -1406,251 +1404,250 @@ export const PRODUCTS: IProduct[] = [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["tomato"]
+    tags: ['tomato'],
   },
   {
     id: 7,
-    category: "pizza",
-    title: "Pizza Margherita",
-    description:
-      "Base sauce tomate, mozzarella et olives.",
+    category: 'pizza',
+    title: 'Pizza Margherita',
+    description: 'Base sauce tomate, mozzarella et olives.',
     price: 700,
-    picture: "../../assets/img/pizza-margherita.png",
+    picture: '../../assets/img/pizza-margherita.png',
     includedIngredients: [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives"
+          title: 'Olives',
         },
         isSelected: true,
       },
@@ -1659,272 +1656,272 @@ export const PRODUCTS: IProduct[] = [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["tomato"]
+    tags: ['tomato'],
   },
   {
     id: 8,
-    category: "pizza",
-    title: "Pizza Veggie",
+    category: 'pizza',
+    title: 'Pizza Veggie',
     description:
-      "Base sauce tomate, Champignons, Poivrons, Pomme de terre, Oignons et Olives.",
+      'Base sauce tomate, Champignons, Poivrons, Pomme de terre, Oignons et Olives.',
     price: 900,
-    picture: "../../assets/img/pizza-veggie.png",
+    picture: '../../assets/img/pizza-veggie.png',
     includedIngredients: [
       {
         ingredient: {
           id: 3,
-          title: "Champignons"
+          title: 'Champignons',
         },
-        isSelected: true
+        isSelected: true,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons"
+          title: 'Poivrons',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives"
+          title: 'Olives',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre"
+          title: 'Pomme de terre',
         },
         isSelected: true,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons"
+          title: 'Oignons',
         },
         isSelected: true,
       },
@@ -1933,295 +1930,296 @@ export const PRODUCTS: IProduct[] = [
       {
         ingredient: {
           id: 1,
-          title: "Mozarella",
+          title: 'Mozarella',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 2,
-          title: "Viande hachée",
+          title: 'Viande hachée',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 3,
-          title: "Champignons",
+          title: 'Champignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 4,
-          title: "Poulet fumé",
+          title: 'Poulet fumé',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 5,
-          title: "Chèvre",
+          title: 'Chèvre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 6,
-          title: "Boursin",
+          title: 'Boursin',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 7,
-          title: "Gorgonzola",
+          title: 'Gorgonzola',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 8,
-          title: "Escalope",
+          title: 'Escalope',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 9,
-          title: "Kebab",
+          title: 'Kebab',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 10,
-          title: "Cordon Bleu",
+          title: 'Cordon Bleu',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 11,
-          title: "Merguez",
+          title: 'Merguez',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 12,
-          title: "Chorizo",
+          title: 'Chorizo',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 13,
-          title: "Jambon",
+          title: 'Jambon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 14,
-          title: "Lardons",
+          title: 'Lardons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 15,
-          title: "Saumon",
+          title: 'Saumon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 16,
-          title: "Crevettes",
+          title: 'Crevettes',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 300
+        additionalPrice: 300,
       },
       {
         ingredient: {
           id: 17,
-          title: "Câpres",
+          title: 'Câpres',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 18,
-          title: "Anchois",
+          title: 'Anchois',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 19,
-          title: "Thon",
+          title: 'Thon',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 200
+        additionalPrice: 200,
       },
       {
         ingredient: {
           id: 20,
-          title: "Herbes de Provence",
+          title: 'Herbes de Provence',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 50
+        additionalPrice: 50,
       },
       {
         ingredient: {
           id: 21,
-          title: "Olives",
+          title: 'Olives',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 22,
-          title: "Poivrons",
+          title: 'Poivrons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 150
+        additionalPrice: 150,
       },
       {
         ingredient: {
           id: 23,
-          title: "Maïs",
+          title: 'Maïs',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 24,
-          title: "Pomme de terre",
+          title: 'Pomme de terre',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
       {
         ingredient: {
           id: 25,
-          title: "Oignons",
+          title: 'Oignons',
         },
         quantity: 0,
         maxQuantity: 1,
-        additionalPrice: 100
+        additionalPrice: 100,
       },
     ],
-    tags: ["tomato", "veggie"]
+    tags: ['tomato', 'veggie'],
   },
   {
     id: 9,
-    category: "drink",
-    title: "Coca Cola",
-    description: "",
+    category: 'drink',
+    title: 'Coca Cola',
+    description: '',
     price: 350,
-    picture: "../../assets/img/coca-cola.png",
+    picture: '../../assets/img/coca-cola.png',
     includedIngredients: [],
     extras: [],
-    tags: ["drink"]
+    tags: ['drink'],
   },
   {
     id: 10,
-    category: "drink",
-    title: "Coca Cola Zéro",
-    description: "",
+    category: 'drink',
+    title: 'Coca Cola Zéro',
+    description: '',
     price: 350,
-    picture: "../../assets/img/coca-cola-zero.png",
+    picture: '../../assets/img/coca-cola-zero.png',
     includedIngredients: [],
     extras: [],
-    tags: ["drink"]
+    tags: ['drink'],
   },
   {
     id: 11,
-    category: "drink",
-    title: "Limonade",
-    description: "",
+    category: 'drink',
+    title: 'Limonade',
+    description: '',
     price: 450,
-    picture: "../../assets/img/limonade.png",
+    picture: '../../assets/img/limonade.png',
     includedIngredients: [],
     extras: [],
-    tags: ["drink"]
+    tags: ['drink'],
   },
   {
     id: 12,
-    category: "dessert",
-    title: "Soufflé al Cioccolato",
-    description: "Mi cuit au chocolat.",
+    category: 'dessert',
+    title: 'Soufflé al Cioccolato',
+    description: 'Mi cuit au chocolat.',
     price: 690,
-    picture: "../../assets/img/chocolat.png",
+    picture: '../../assets/img/chocolat.png',
     includedIngredients: [],
     extras: [],
-    tags: ["dessert"]
+    tags: ['dessert'],
   },
   {
     id: 13,
-    category: "dessert",
-    title: "Panna cotta",
-    description: "Panna cotta , accompagnée d’un coulis aux fruits rouges.",
+    category: 'dessert',
+    title: 'Panna cotta',
+    description: 'Panna cotta , accompagnée d’un coulis aux fruits rouges.',
     price: 690,
-    picture: "../../assets/img/pannacotta.png",
+    picture: '../../assets/img/pannacotta.png',
     includedIngredients: [],
     extras: [],
-    tags: ["dessert"]
+    tags: ['dessert'],
   },
   {
     id: 14,
-    category: "dessert",
-    title: "Tiramisu",
-    description: "Entremets italien à base de mascarpone, de biscuit, parfumé au café et saupoudré de cacao.",
+    category: 'dessert',
+    title: 'Tiramisu',
+    description:
+      'Entremets italien à base de mascarpone, de biscuit, parfumé au café et saupoudré de cacao.',
     price: 690,
-    picture: "../../assets/img/tiramisu.png",
+    picture: '../../assets/img/tiramisu.png',
     includedIngredients: [],
     extras: [],
-    tags: ["dessert"]
-  }
+    tags: ['dessert'],
+  },
 ];
