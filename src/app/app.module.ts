@@ -9,6 +9,15 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.component';
+<<<<<<< HEAD
+=======
+import { CentimesToEurosPipe, ProductCardsComponent } from './components/product-cards/product-cards.component';
+import { BasketComponent } from './pages/basket/basket.component';
+import { OrderSuccessComponent } from './pages/order-success/order-success.component';
+
+
+
+>>>>>>> 526fcda8abc4c80422985c99c451ec87463a228a
 
 import {
   CentimesToEurosPipe,
@@ -32,9 +41,16 @@ import { ProductsCategoryComponent } from './components/products-category/produc
     FilterByTagComponent,
     FormNumberTableComponent,
     WelcomeComponent,
+<<<<<<< HEAD
     CustomProductComponent,
     NotFoundComponent,
     ProductsCategoryComponent,
+=======
+    OrderSuccessComponent,
+    BasketComponent
+
+    
+>>>>>>> 526fcda8abc4c80422985c99c451ec87463a228a
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
