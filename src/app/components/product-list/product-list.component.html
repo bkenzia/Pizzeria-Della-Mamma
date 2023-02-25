@@ -1,4 +1,4 @@
-<h2>{{ productList.titre }}</h2>
+<h2 *ngIf="!this.verifyCategorieTitle()">{{ productList.titre }}</h2>
 
 <ul class="column flexWrap">
   <app-product-cards

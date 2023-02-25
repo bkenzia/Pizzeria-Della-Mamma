@@ -8,12 +8,15 @@ import { IProduct, IProductsByCategory } from 'src/app/mocks/mock2.0';
 })
 export class ProductListComponent {
   @Input() productList!: IProductsByCategory;
+  categoryTitle!: boolean;
   ngOnInit() {
     this.productList;
-
-    console.log(
-      'products list',
-      JSON.stringify(this.productList.products) == JSON.stringify([])
-    );
+  }
+  verifyCategorieTitle(): boolean {
+    if (this.productList.products) {
+      return (this.categoryTitle =
+        JSON.stringify(this.productList.products) == JSON.stringify([]));
+    }
+    return this.categoryTitle;
   }
 }

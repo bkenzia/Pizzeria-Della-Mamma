@@ -43,7 +43,7 @@ export class FormNumberTableComponent {
   getNumber() {
     // console.log('valeur number localstorage', localStorage.getItem('number'));
     const number = localStorage.getItem('number');
-    console.log('test', number);
+
     if (number != null) {
       this.stockNumber(number);
     } else {
