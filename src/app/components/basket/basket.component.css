@@ -1,0 +1,14 @@
+
+
+.productTitle{
+    color: #092947;
+    font-family: Playfair Display;
+    font-weight: 700;
+}
+
+.productPrice{
+    color: #092947;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+}

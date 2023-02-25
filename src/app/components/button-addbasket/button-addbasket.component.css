@@ -1,8 +1,15 @@
 button{
     background-color: #092947;
+    padding: 24px 96px;
     border: none;
     border-radius: 10px;
     color: white;
     font-family: Inter;
     font-size: 16px;
+    font-weight: 700;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.5
 }
