@@ -38,7 +38,12 @@ import { ProductsCategoryComponent } from './components/products-category/produc
     FormNumberTableComponent,
     WelcomeComponent,
     OrderSuccessComponent,
-    BasketComponent
+    BasketComponent,
+    ProductsCategoryComponent,
+    NotFoundComponent,
+    CustomProductComponent
+
+
 
     
   ],
