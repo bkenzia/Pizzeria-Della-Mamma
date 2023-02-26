@@ -22,3 +22,17 @@ Partie filtre des produits :
 - Chaque tag a un lien de routeur et déclenche la méthode 'updateProductCategorie' grace a l'evenement (click) 
 
 ### Il y a aussi le service "productList" avec une méthode "getProducts" qui prend le parametre 'tag' de type TagType. La méthode verifie si le tableau de tags contient un seul element. Si c'est le czs, elle renvoie tous les produits. Sinon, elle filtre les produits en fonction du tag fourni. "includes" permet de verifier si le tag est inclus dans le tzableau de tags du produit. 
+
+# Form number : 
+## Typescript : 
+- importation de FormBuilder et FormGroup pour manipuler des formulaires 
+- formNumberTable!: FormGroup represente le formulaire de saisie du numero de table 
+- error: string = '' qui permet de stocker un message d'erreur en cas de saisie incorrecte du numero de table 
+- la methode getNumber pour recuperer le numero de table stocké dans le local storage du navigateur 
+- methode getInput qui permet de recuperer la valeur saisie par l'utilisateur 
+- methode validateNumber est appelé. Elle recupere la valeur de l'utilisateur en appelant la methode getInput. Si cette valeur est comprise entre 1 et 14 , la methode navigate est appelée pour naviguer vers la page all-products. Sinon elle affiche une erreur. 
+- methode stockNumber utilise la methode setItem pour stocker le numero de table dans le navigateur pour conserver le numero de table meme si l utilisateur recharge ou ferme la page
+- methode getNumber permet de recuperer le numero de table stocké dans le navigateur a l'aide de la methode getItem. Si un numero de table est deja stocké, elle renvoie ce numero. Sinon elle utilise la methode stockNumber pour stocker le numero de table saisi par l'utilisateur. Elle renvoie ensuite le numero de table recupéré ou stocké. 
+
+### HTML : 
+- le HTML affiche un message de bienvenue si aucun numero de table n'a ete stocké localement, sinon elle affiche le numero de table. [ngClass] permet de masquer ou afficher des elements en fonction de la presence ou l'absence d'un numero de table dans le local storage. 
