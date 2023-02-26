@@ -21,6 +21,15 @@ import { OrderSuccessComponent } from './pages/order-success/order-success.compo
 //   CentimesToEurosPipe,
 //   ProductCardsComponent,
 // } from './components/product-cards/product-cards.component';
+
+import { CounterComponent } from './components/counter/counter.component';
+import { ButtonAddbasketComponent } from './components/button-addbasket/button-addbasket.component';
+
+//  import {
+//    CentimesToEurosPipe,
+//    ProductCardsComponent,
+//  } from './components/product-cards/product-cards.component';
+
 import { CustomProductComponent } from './components/custom-product/custom-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProductsCategoryComponent } from './components/products-category/products-category.component';
@@ -40,6 +49,14 @@ import { ProductsCategoryComponent } from './components/products-category/produc
     FormNumberTableComponent,
     WelcomeComponent,
 
+    CustomProductComponent,
+    NotFoundComponent,
+    ProductsCategoryComponent,
+
+    OrderSuccessComponent,
+    BasketComponent,
+    CounterComponent,
+    ButtonAddbasketComponent,
     CustomProductComponent,
     NotFoundComponent,
     ProductsCategoryComponent,

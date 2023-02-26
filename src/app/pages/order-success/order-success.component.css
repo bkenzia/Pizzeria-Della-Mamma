@@ -1,19 +1,48 @@
-h2{
-    font-family: Inter;
-    font-size: 30px;
-    text-align: center;
+h2 {
+  font-family: Inter;
+  font-size: 30px;
+  text-align: center;
 }
 
-h3{
-    font-family: Playfair Display;
-    font-size: 20px;
-    font-style: italic;
-    color: #092947;
+h3 {
+  font-family: Playfair Display;
+  font-style: italic;
+  color: #092947;
+  margin-left: 100px;
+  margin-top: 70px;
 }
 
-.newOrder{
-    font-family: Inter;
-    font-size: 14px;
-    text-align: center;
-    color: #092947;
+.newOrder {
+  font-family: Inter;
+  font-size: 14px;
+  text-align: center;
+}
+
+.newOrder a {
+  color: #092947;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  background-color: white;
+
+  margin: 25px 100px;
+  padding: 15px;
+}
+img {
+  width: 136px;
+  height: 136px;
+}
+ul {
+  padding-left: 0;
+}
+.bonAppeti {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-top: 54px;
+  color: #e12417;
 }

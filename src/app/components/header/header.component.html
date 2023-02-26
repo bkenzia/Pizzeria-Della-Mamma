@@ -8,8 +8,18 @@
     <button (click)="updateNamberTable()">Table {{ this.getNumber() }}</button>
 
     <button>
-      <a routerLink="/basket"><img src="assets/img/icon-shoppingcard.png" height="15px" weigh="15px" /></a>
-      <!-- {{ this.basketService.productQuantity }} -->
+      <a routerLink="/basket"
+        ><img
+          src="assets/img/icon-shoppingcard.png"
+          height="15px"
+          weigh="15px"
+        />
+        <span
+          *ngIf="this.cartService.productQuantity !== 0"
+          class="cart-quantity"
+          >{{ this.cartService.productQuantity }}</span
+        >
+      </a>
     </button>
   </nav>
 </header>

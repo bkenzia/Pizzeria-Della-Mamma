@@ -1,37 +1,36 @@
 <p>basket works!</p>
 
-<!-- <main>
-
-    <div id="panier" >
-
-       
-
+<main>
+ 
         <ul>
-            <li *ngFor="let basketProduct of basket; let index = index">
-                <article class="article flex">
-                    <img src="{{basketProduct.product.image }}" alt="{{ basketProduct.product.title}}" width="150px">
-                   
-                    Partie nom de l'article - prix et description
-                    <div>
-                        <p>{{ basketProduct.product.title}}</p>
-                        <br>
-                        <p>{{ basketProduct.product.description }}</p>
-                        <p{{ basketProduct.product.price}}€</p>
-                    </div> -->
-
-
-                    <!-- partie prix -->
-                    <!-- <div>
-
-                        <app-counter></app-counter>
             
+            <li *ngFor="let productInBasket of basket; let index = index">
+                
+                <article class="flexProductInBasket">
+                    
+                    <div class="selectedProduct">
+                        <img src="{{productInBasket.product.image }}" width="136px" height="136px">
+                    
+                        <div>
+                            <p class="productTitle">{{ productInBasket.product.title}} </p>
+                            <p class="productPrice">{{ productInBasket.product.price}} € </p>
+                        </div> 
+                    </div>
+
+                    <div class="selectedIngredients">
+
+                        <ng-container *ngFor="let chosenIngredient of productInBasket.product.includedIngredient; index as i" >
+
+                            <!-- renseigner condition des ingrédients:
+                            si un ingrédient inclu a été retiré
+                            si un/des ingrédients en extra a/ont été ajouté  -->
+
+                        </ng-container>
+
                     </div>
 
                 </article>
-                <br>
             </li>
         </ul>
 
-
-
-    </div> -->
+</main>
