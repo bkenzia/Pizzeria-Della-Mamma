@@ -1,6 +1,8 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IProduct, PRODUCTS } from 'src/app/mocks/products';
+import { BasketProduct, BasketService } from 'src/app/services/basket.service';
+import { ProductsService } from 'src/app/services/products.service';
 // import { IProduct, PRODUCTS } from 'src/app/mocks/products';
 // @Pipe = décorateur -> utile pour définir un Pipe. Prend un objet en parametre qui contient un nom pour le pipe 'name'
 @Pipe({ name: 'centimesToEuros' })
@@ -27,7 +29,13 @@ export class CentimesToEurosPipe implements PipeTransform {
 })
 export class CustomProductComponent {
   product!: IProduct;
-  constructor(private activatedRout: ActivatedRoute, private router: Router) {}
+  quantity: number = 1;
+  constructor(
+    private productsService: ProductsService,
+    private cartService: BasketService,
+    private activatedRout: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.getProduct();
@@ -46,5 +54,16 @@ export class CustomProductComponent {
     } else {
       this.router.navigate(['not-found']);
     }
+  }
+
+  // method for adding a product to CART (created by erdal)
+  addToCart() {
+    if (!this.product) return;
+
+    const cartProduct: BasketProduct = {
+      product: this.product,
+      quantity: this.quantity,
+    };
+    this.cartService.addToBasket(cartProduct);
   }
 }

@@ -1,7 +1,35 @@
-<p>basket works!</p>
+<div class="flex">
+  <h3>Panier</h3>
+  <p class="deleteBasket" (click)="removeProduct()">Vider le panier</p>
+</div>
 
-<app-basket></app-basket>
+<div *ngIf="basketService.productQuantity == 0" class="emptyBasket">
+  <p>Vous n'avez aucun article pour le moment.</p>
+  <p><a routerLink="/all-products">Retourner à la page produit</a></p>
+</div>
+<ul>
+  <li *ngFor="let basketProduct of basket">
+    <img src="{{ basketProduct.product.picture }}" alt="" />
+    <div>
+      <p>{{ basketProduct.product.title }}</p>
+      <p>{{ basketProduct.product.price | centimesToEuros }}</p>
+    </div>
+  </li>
+</ul>
 
-<!-- <button><a routerLink="/order-success"> Table {{ this.getNumber() }} : Envoyer la commande en cuisine </a></button>
+<!-- <app-basket></app-basket> -->
 
-<p><a routerLink="/">Votre table n'est pas la {{ this.getNumber() }}  ?</a></p> -->
+<div class="flexBasket" *ngIf="basketService.productQuantity != 0">
+  <div class="basketPageLink">
+    <button class="confirmOrder">
+      <a routerLink="/order-success">
+        Table {{ this.getNumber() }} : Envoyer la commande en cuisine
+      </a>
+    </button>
+
+    <p class="changeTable">
+      <a routerLink="/">Votre table n'est pas la {{ this.getNumber() }} ?</a>
+    </p>
+  </div>
+</div>
+<h2>Buon Appetito !</h2>
