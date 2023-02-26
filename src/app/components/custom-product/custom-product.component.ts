@@ -39,6 +39,7 @@ export class CustomProductComponent {
 
   ngOnInit() {
     this.getProduct();
+    this.sortProductsByName();
   }
   getProductById(id: number): IProduct | undefined {
     return PRODUCTS.find((product) => product.id === id);
@@ -65,5 +66,11 @@ export class CustomProductComponent {
       quantity: this.quantity,
     };
     this.cartService.addToBasket(cartProduct);
+  }
+
+  sortProductsByName() {
+    return this.product.extras.sort((a, b) =>
+      a.ingredient.title.localeCompare(b.ingredient.title)
+    );
   }
 }

@@ -9,13 +9,21 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FilterByTagComponent } from './components/filter-by-tag/filter-by-tag.component';
+import { BasketComponent } from './pages/basket/basket.component';
+import { OrderSuccessComponent } from './pages/order-success/order-success.component';
 
 import {
   CentimesToEurosPipe,
   ProductCardsComponent,
 } from './components/product-cards/product-cards.component';
-import { BasketComponent } from './pages/basket/basket.component';
-import { OrderSuccessComponent } from './pages/order-success/order-success.component';
+// import { BasketComponent } from './pages/basket/basket.component';
+// import { OrderSuccessComponent } from './pages/order-success/order-success.component';
+
+// import {
+//   CentimesToEurosPipe,
+//   ProductCardsComponent,
+// } from './components/product-cards/product-cards.component';
+
 import { CounterComponent } from './components/counter/counter.component';
 import { ButtonAddbasketComponent } from './components/button-addbasket/button-addbasket.component';
 
@@ -23,6 +31,7 @@ import { ButtonAddbasketComponent } from './components/button-addbasket/button-a
 //    CentimesToEurosPipe,
 //    ProductCardsComponent,
 //  } from './components/product-cards/product-cards.component';
+
 import { CustomProductComponent } from './components/custom-product/custom-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProductsCategoryComponent } from './components/products-category/products-category.component';
@@ -41,6 +50,11 @@ import { ProductsCategoryComponent } from './components/products-category/produc
     FilterByTagComponent,
     FormNumberTableComponent,
     WelcomeComponent,
+
+    CustomProductComponent,
+    NotFoundComponent,
+    ProductsCategoryComponent,
+
     OrderSuccessComponent,
     BasketComponent,
     CounterComponent,
@@ -48,8 +62,14 @@ import { ProductsCategoryComponent } from './components/products-category/produc
     CustomProductComponent,
     NotFoundComponent,
     ProductsCategoryComponent,
+
     OrderSuccessComponent,
     BasketComponent,
+    OrderSuccessComponent,
+    BasketComponent,
+    ProductsCategoryComponent,
+    NotFoundComponent,
+    CustomProductComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
