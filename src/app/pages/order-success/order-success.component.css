@@ -6,14 +6,20 @@ h2{
 
 h3{
     font-family: Playfair Display;
-    font-size: 20px;
     font-style: italic;
     color: #092947;
+    margin-left: 100px;
+    margin-top: 70px;
 }
 
 .newOrder{
     font-family: Inter;
     font-size: 14px;
     text-align: center;
+    
+}
+
+.newOrder a{
     color: #092947;
+    text-decoration: none;
 }

@@ -1,0 +1,83 @@
+h3{
+    font-family: Playfair Display;
+    font-style: italic;
+    color: #092947;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+.deleteBasket{
+    color: red;
+    font-family: Inter;
+    font-size: 16px;   
+    margin-top: 70px;
+    margin-right: 100px;
+}
+
+.deleteBasket:hover{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.confirmOrder{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #092947;
+    color: white;
+    padding: 24px 208px;
+    border: none;
+    border-radius: 10px;
+}
+
+.confirmOrder a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+.changeTable{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.changeTable a{
+    color: #092947;
+}
+
+.basketPageLink{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basketPageLink .changeTable{
+    align-self: flex-end;
+}
+
+.flexBasket{
+    display: flex;
+    justify-content: center;
+}
+
+.emptyBasket{
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.emptyBasket a{
+    color: black;
+}
