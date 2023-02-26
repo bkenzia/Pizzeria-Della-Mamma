@@ -1,83 +1,97 @@
-h3{
-    font-family: Playfair Display;
-    font-style: italic;
-    color: #092947;
-    margin-left: 100px;
-    margin-top: 70px;
+h3 {
+  font-family: Playfair Display;
+  font-style: italic;
+  color: #092947;
+  margin-left: 100px;
+  margin-top: 70px;
 }
 
-.deleteBasket{
-    color: red;
-    font-family: Inter;
-    font-size: 16px;   
-    margin-top: 70px;
-    margin-right: 100px;
+.deleteBasket {
+  color: red;
+  font-family: Inter;
+  font-size: 16px;
+  margin-top: 70px;
+  margin-right: 100px;
 }
 
-.deleteBasket:hover{
-    cursor: pointer;
+.deleteBasket:hover {
+  cursor: pointer;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
-.confirmOrder{
-    font-family: Inter;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: #092947;
-    color: white;
-    padding: 24px 208px;
-    border: none;
-    border-radius: 10px;
-}
-
-.confirmOrder a{
-    text-decoration: none;
-    color: white;
+.confirmOrder {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #092947;
+  color: white;
+  padding: 24px 208px;
+  border: none;
+  border-radius: 10px;
 }
 
-button:hover{
-    opacity: 0.5;
-    cursor: pointer;
+.confirmOrder a {
+  text-decoration: none;
+  color: white;
 }
 
-
-
-.changeTable{
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 16px;
-
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
-.changeTable a{
-    color: #092947;
+.changeTable {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.basketPageLink{
-    text-align: center;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.changeTable a {
+  color: #092947;
 }
 
-.basketPageLink .changeTable{
-    align-self: flex-end;
+.basketPageLink {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.flexBasket{
-    display: flex;
-    justify-content: center;
+.basketPageLink .changeTable {
+  align-self: flex-end;
 }
 
-.emptyBasket{
-    font-family: Inter;
-    font-size: 16px;
+.flexBasket {
+  display: flex;
+  justify-content: center;
 }
 
-.emptyBasket a{
-    color: black;
+.emptyBasket {
+  font-family: Inter;
+  font-size: 16px;
+}
+
+.emptyBasket a {
+  color: black;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  background-color: white;
+
+  margin: 25px 100px;
+  padding: 15px;
+}
+img {
+  width: 136px;
+  height: 136px;
+}
+ul {
+  padding-left: 0;
 }
